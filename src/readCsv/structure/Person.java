@@ -45,12 +45,9 @@ public class Person extends Model {
   }
 
   public static Person getByName(List<Person> people, String name) {
-    for (Person person : people) {
-      System.out.println(person.getName().length() + " - " + name.length() + ": " + person.getName() == name);
-      if (person.getName() == name) {
+    for (Person person : people)
+      if (person.getName().equals(name))
         return person;
-      }
-    }
     return new Person();
   }
 }
