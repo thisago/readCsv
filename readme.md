@@ -2,7 +2,7 @@
 
 This is a CSV parsing implementation in Java using the DAO pattern, improved version of [masaruohashijr/custos](https://github.com/masaruohashijr/custos).
 
-## Usage
+## Example
 
 **houses.csv**
 ```csv
@@ -70,7 +70,7 @@ public class DataDeserializer extends Parser {
 List<Model> all = new DataDeserializer(/*delimiter:*/ ";").parseCsv("data.csv");
 ```
 
-### CSV parser collects the CSV headers to allow advanced parsing
+#### CSV parser collects the CSV headers to allow advanced parsing
 
 You need to identify the columns based on their name dynamically? So you'll need
 to access the CSV headers. This implementation of parser allows it!
